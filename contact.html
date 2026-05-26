@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Abhay Mishra</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@200;300;400;600&display=swap" rel="stylesheet">
+	<style>
+    /* Logo image sizing — adjust as needed */
+    .nav-logo img {
+      height: 48px;
+      width: auto;
+      display: block;
+      /* Keeps it crisp on dark/light backgrounds */
+      filter: drop-shadow(0 0 6px rgba(0,0,0,0.3));
+      transition: opacity 0.2s ease;
+    }
+    .nav-logo img:hover {
+      opacity: 0.85;
+    }
+
+    .footer-logo img {
+      height: 56px;
+      width: auto;
+      display: block;
+      margin: 0 auto 0.5rem;
+      filter: drop-shadow(0 0 8px rgba(0,0,0,0.4));
+      opacity: 0.9;
+    }
+
+    /* Social links in contact section */
+    .social-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.25rem;
+    }
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.35rem 0.75rem;
+      border: 1px solid currentColor;
+      border-radius: 2px;
+      font-size: 0.78rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      text-decoration: none;
+      opacity: 0.75;
+      transition: opacity 0.2s ease, background 0.2s ease;
+    }
+    .social-link:hover {
+      opacity: 1;
+      background: rgba(255,255,255,0.08);
+    }
+    .social-link svg {
+      flex-shrink: 0;
+    }
+
+    /* Social icons in footer */
+    .footer-social {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      margin: 0.75rem 0;
+    }
+    .footer-social a {
+      opacity: 0.6;
+      transition: opacity 0.2s ease;
+      display: flex;
+      align-items: center;
+    }
+    .footer-social a:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body class="page-contact">
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo"><img src="ABHAY MISHRA WORK IN ANIMATION/new_03.png" alt=""/></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="hire-btn active-hire">Hire Me</a>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="close-menu" id="closeMenu">&#10005;</button>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <section class="page-header">
+    <div class="section-label">Let's Connect</div>
+    <h1>Contact</h1>
+    <p>Available for freelance projects, collaborations, and creative conversations.</p>
+  </section>
+
+  <!-- CONTACT LAYOUT -->
+  <section class="contact-section">
+    <div class="contact-left">
+      <div class="section-label">Say Hello</div>
+      <h2>Let's work<br><em>together</em></h2>
+      <p>
+        Whether you have a project in mind, want to collaborate, or simply want to discuss ideas — 
+        I'd love to hear from you. I'm a student always looking for opportunities to grow, 
+        collaborate, and create meaningful work.
+      </p>
+      <div class="contact-details">
+        <div class="contact-item">
+          <span class="ci-label">Email</span>
+          <a href="mailto:Abhay54321mishra@gmail.com">Abhay54321mishra@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <span class="ci-label">Phone</span>
+          <a href="tel:+919625622289">+91 9625622289</a>
+        </div>
+        <div class="contact-item">
+          <span class="ci-label">Institution</span>
+          <span>AAFT School of Animation<br>Film City, Noida (2025–2027)</span>
+        </div>
+        <div class="contact-item">
+          <span class="ci-label">Available For</span>
+          <span>Photoshop · Digital Illustration · VFX<br>Motion Graphics · Creative Projects</span>
+        </div>
+        <div class="contact-item">
+          <span class="ci-label">Follow</span>
+          <div class="social-links">
+            <a href="https://www.behance.net/minemindfact" target="_blank" rel="noopener noreferrer" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 1.2.836 1.884 2.102 1.884.95 0 1.556-.445 1.786-1.155L23.726 17zM15.97 13h4.784c-.104-1.199-.81-1.913-2.29-1.913-1.326 0-2.115.62-2.494 1.913zM8 11.894c1.015 0 1.791-.439 1.791-1.419 0-.97-.776-1.419-1.791-1.419H5v2.838h3zm.353 4.777c1.134 0 1.952-.538 1.952-1.63 0-1.082-.83-1.629-1.952-1.629H5v3.259h3.353zM0 5v14h8.765C11.21 19 13 17.4 13 14.98c0-1.72-.894-2.93-2.375-3.48C11.703 11 12.5 10.01 12.5 8.38 12.5 6.15 10.74 5 8.397 5H0z"/></svg>
+              Behance
+            </a>
+            <a href="https://youtube.com/@abhaymishra-vfx?si=pMMHAKNSJgcCYDiY" target="_blank" rel="noopener noreferrer" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              YouTube
+            </a>
+            <a href="https://www.linkedin.com/in/-abhaymishra?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+            <a href="https://www.instagram.com/abhaymishra187?igsh=MWo2aW5rZWxxbmphcQ==" target="_blank" rel="noopener noreferrer" class="social-link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+              Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="mailto:Abhay54321mishra@gmail.com" class="btn-primary" style="margin-top:2rem;display:inline-block;">
+        Send an Email
+      </a>
+    </div>
+
+    <div class="contact-right">
+      <div class="contact-form-wrap">
+        <h3>Send a Message</h3>
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" placeholder="Enter your name" id="formName"/>
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" placeholder="Enter your email" id="formEmail"/>
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <input type="text" placeholder="Project inquiry / Collaboration / etc." id="formSubject"/>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Tell me about your project or idea..." id="formMessage" rows="5"></textarea>
+        </div>
+        <button class="btn-primary full-w" onclick="handleFormSubmit()">Send Message</button>
+        <div id="formSuccess" class="form-success" style="display:none;">
+          ✓ Thank you! Your message has been noted. I'll be in touch soon.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME SECTION -->
+  <section class="resume-section">
+    <div class="section-label">My Resume</div>
+    <h2>Curriculum<br><em>Vitae</em></h2>
+
+    <div class="resume-layout">
+
+      <!-- LEFT COLUMN -->
+      <div class="resume-col">
+
+        <div class="resume-block">
+          <h3>Profile</h3>
+          <p>
+            A creative and curious visual artist currently studying Animation, Graphics & VFX at AAFT Film City, Noida (2025–2027). Previously worked at Avid Apparels Industries (2023–2025), where I created style presentations for international buyers using Photoshop and PowerPoint. Passionate about storytelling, paper craft, poetry, and painting — always exploring something new and out of the box. Seeking freelance opportunities and creative collaborations.
+          </p>
+        </div>
+
+        <div class="resume-block">
+          <h3>Education</h3>
+          <div class="resume-entry">
+            <div class="re-header">
+              <strong>AAFT School of Animation</strong>
+              <span class="re-date">2025 – 2028</span>
+            </div>
+            <p>Animation · Graphics · VFX<br>Film City, Noida</p>
+          </div>
+          <div class="resume-entry">
+            <div class="re-header">
+              <strong>Diploma in Computer Application</strong>
+              <span class="re-date">Prior</span>
+            </div>
+            <p>Computer applications and software fundamentals.</p>
+          </div>
+          <div class="resume-entry">
+            <div class="re-header">
+              <strong>12th — CBSE Board</strong>
+              <span class="re-date">Prior</span>
+            </div>
+            <p></p>
+          </div>
+          <div class="resume-entry">
+            <div class="re-header">
+              <strong>10th — CBSE Board</strong>
+              <span class="re-date">Prior</span>
+            </div>
+            <p></p>
+          </div>
+        </div>
+
+        <div class="resume-block">
+          <h3>Experience</h3>
+          <div class="resume-entry">
+            <div class="re-header">
+              <strong>Avid Apparels Industries </strong>
+              <span class="re-date">2023 – 2025</span>
+            </div>
+            <p>Created style presentations for international buyers using Adobe Photoshop and Microsoft PowerPoint.
+Worked closely with the designing team in developing garment concepts, design coordination, fabric selection, trend research, and sample development.
+Assisted in creating fashion design layouts, color combinations, embroidery references, and styling presentations for buyers.
+Attended and coordinated with international buyers during factory visits and product presentations.
+Managed domestic and international courier bookings through DHL, UPS, and FedEx.
+Developed strong knowledge of fabrics including Taffeta, Crochet, Linen, Chiffon, Corduroy, and various woven and knitted materials.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- RIGHT COLUMN -->
+      <div class="resume-col">
+
+        <div class="resume-block">
+          <h3>Skills</h3>
+          <div class="resume-skills-list">
+            <span>Adobe Photoshop</span>
+            <span>AI Tools</span>
+            <span>Microsoft Office</span>
+            <span>PowerPoint</span>
+            <span>Digital Illustration</span>
+            <span>Traditional Painting</span>
+            <span>Watercolour</span>
+            <span>Paper Craft</span>
+            <span>Character Design</span>
+            <span>Creative Writing</span>
+            <span>Poetry</span>
+            <span>Multitasking</span>
+          </div>
+        </div>
+
+        <div class="resume-block">
+          <h3>Achievements & Activities</h3>
+          <div class="resume-entry">
+            <div class="re-header">
+              <strong>Paper Craft & Mixed Media Art</strong>
+              <span class="re-date">Ongoing</span>
+            </div>
+            <p>Creates intricate paper craft pieces including quilled floral designs and decorative wall art, showcasing precision and artistic vision.</p>
+          </div>
+          <div class="resume-entry">
+            <div class="re-header">
+              <strong>Photography & Photo Editing</strong>
+              <span class="re-date">Ongoing</span>
+            </div>
+            <p>Skilled in before-and-after photo retouching and architectural photography, using Photoshop for creative transformations.</p>
+          </div>
+          <div class="resume-entry">
+            <div class="re-header">
+              <strong>Poetry & Creative Writing</strong>
+              <span class="re-date">Ongoing</span>
+            </div>
+            <p>Author of original poetry, including published personal works like "Part of that Broken Sun."</p>
+          </div>
+        </div>
+
+        <div class="resume-block">
+          <h3>Languages</h3>
+          <div class="resume-skills-list">
+            <span>Hindi (Native)</span>
+            <span>English (Fluent)</span>
+            <span>Spanish (Beginner)</span>
+          </div>
+        </div>
+
+        <div class="resume-block">
+          <h3>Contact</h3>
+          <p>
+            <strong>Email:</strong> Abhay54321mishra@gmail.com<br>
+            <strong>Phone:</strong> +91 9625622289<br>
+            <strong>Institution:</strong> AAFT Film City, Noida<br>
+            <strong>Portfolio:</strong> You are here
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="resume-download-note">
+      <p>Want a PDF copy of my resume? <a href="mailto:Abhay54321mishra@gmail.com">Email me</a> and I'll send it over.</p>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <h2>Let's make something<br><em>memorable.</em></h2>
+    <a href="portfolio.html" class="btn-primary">View My Work</a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-logo"><img src="ABHAY MISHRA WORK IN ANIMATION/new_03.png" alt=""/></div>
+    <div class="footer-social">
+      <a href="https://www.behance.net/minemindfact" target="_blank" rel="noopener noreferrer" title="Behance">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 1.2.836 1.884 2.102 1.884.95 0 1.556-.445 1.786-1.155L23.726 17zM15.97 13h4.784c-.104-1.199-.81-1.913-2.29-1.913-1.326 0-2.115.62-2.494 1.913zM8 11.894c1.015 0 1.791-.439 1.791-1.419 0-.97-.776-1.419-1.791-1.419H5v2.838h3zm.353 4.777c1.134 0 1.952-.538 1.952-1.63 0-1.082-.83-1.629-1.952-1.629H5v3.259h3.353zM0 5v14h8.765C11.21 19 13 17.4 13 14.98c0-1.72-.894-2.93-2.375-3.48C11.703 11 12.5 10.01 12.5 8.38 12.5 6.15 10.74 5 8.397 5H0z"/></svg>
+      </a>
+      <a href="https://youtube.com/@abhaymishra-vfx?si=pMMHAKNSJgcCYDiY" target="_blank" rel="noopener noreferrer" title="YouTube">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/-abhaymishra?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/abhaymishra187?igsh=MWo2aW5rZWxxbmphcQ==" target="_blank" rel="noopener noreferrer" title="Instagram">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+      </a>
+    </div>
+    <p>© 2026 Abhay Mishra · AAFT School of Animation</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

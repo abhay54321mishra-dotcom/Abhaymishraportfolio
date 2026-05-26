@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About — Abhay Mishra</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Josefin+Sans:wght@200;300;400;600&display=swap" rel="stylesheet">
+	<style>
+    /* Logo image sizing — adjust as needed */
+    .nav-logo img {
+      height: 48px;
+      width: auto;
+      display: block;
+      /* Keeps it crisp on dark/light backgrounds */
+      filter: drop-shadow(0 0 6px rgba(0,0,0,0.3));
+      transition: opacity 0.2s ease;
+    }
+    .nav-logo img:hover {
+      opacity: 0.85;
+    }
+
+    .footer-logo img {
+      height: 56px;
+      width: auto;
+      display: block;
+      margin: 0 auto 0.5rem;
+      filter: drop-shadow(0 0 8px rgba(0,0,0,0.4));
+      opacity: 0.9;
+    }
+
+    /* ── PAGE HEADER VIDEO BACKGROUND ───────────────────────────── */
+    .page-header {
+      position: relative;
+      overflow: hidden;
+    }
+    .page-header .header-video-bg {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+      pointer-events: none;
+    }
+    .page-header::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.52);
+      z-index: 1;
+    }
+    .page-header > *:not(.header-video-bg) {
+      position: relative;
+      z-index: 2;
+    }
+  </style>
+</head>
+<body class="page-about">
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="ABHAY MISHRA WORK IN ANIMATION/new_03.png" alt=""/>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="hire-btn">Hire Me</a>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="close-menu" id="closeMenu">&#10005;</button>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="contact.html" class="hire-btn-mobile">Hire Me</a></li>
+    </ul>
+  </div>
+
+  <!-- PAGE HEADER -->
+	<section></section>
+  <section class="page-header">
+    <video class="header-video-bg" autoplay muted loop playsinline>
+      <source src="ABHAY MISHRA WORK IN ANIMATION/Artboard 1.mp4" type="video/mp4">
+    </video>
+    <div class="section-label">The Artist</div>
+    <h1>About Me</h1>
+    <p>A student of life, art, and everything in between.</p>
+  </section>
+
+  <!-- ABOUT MAIN -->
+  <section class="about-main">
+    <div class="about-photo-col">
+      <div class="about-photo-frame">
+        <div class="about-photo-placeholder">
+          <span><img src="ABHAY MISHRA WORK IN ANIMATION/ChatGPT Image May 19, 2026, 02_38_38 PM.jpg" alt=""/></span>
+          <small></small>
+        </div>
+        <!-- <img src="images/about-photo.jpg" alt="Abhay Mishra"> -->
+      </div>
+      <div class="about-badge">AAFT · 2025</div>
+    </div>
+    <div class="about-text-col">
+      <div class="section-label">Who I Am</div>
+      <h2>Abhay <em>Mishra</em></h2>
+      <p class="about-lead">
+        I'm a multi-disciplinary creative currently studying at AAFT School of Animation, 
+        Marva Studio, Sector 16 — where I am learning to turn imagination into compelling visual experiences.
+      </p>
+      <p>
+        My journey as an artist is rooted in curiosity. I've always been drawn to multiple forms of expression — 
+        from the meditative patience of traditional oil painting to the electric energy of VFX compositing. 
+        I believe the best creative work happens when you refuse to stay inside one box.
+      </p>
+      <p>
+        At AAFT, I've been trained in the fundamentals of animation, visual effects, and digital media. 
+        Outside the classroom, I explore illustration, literature, and experimental art as ways to sharpen 
+        my voice and deepen my perspective.
+      </p>
+      <p>
+        I am available for freelance illustration, motion graphics, photo manipulation, and creative collaboration. 
+        If you're looking for someone who brings genuine passion and a multi-disciplinary eye to the table — let's talk.
+      </p>
+      <a href="contact.html" class="btn-primary" style="margin-top:1.5rem;display:inline-block;">Get In Touch</a>
+    </div>
+  </section>
+
+  
+
+
+  <!-- WHAT I BRING -->
+  <section class="what-i-bring">
+    <div class="section-label">Why Work With Me</div>
+    <h2>What I Bring to<br><em>Every Project</em></h2>
+    <div class="bring-grid">
+      <div class="bring-card">
+        <span>01</span>
+        <h4>Multi-Disciplinary Vision</h4>
+        <p>Having worked across illustration, painting, motion, and writing, I bring unexpected connections between fields that enrich the final work.</p>
+      </div>
+      <div class="bring-card">
+        <span>02</span>
+        <h4>Storytelling First</h4>
+        <p>Every design decision is driven by narrative intent. I ask what the work needs to say before I decide how it should look.</p>
+      </div>
+      <div class="bring-card">
+        <span>03</span>
+        <h4>Dedication & Growth</h4>
+        <p>As a student, I bring relentless curiosity and the energy of someone who is actively growing their craft every single day.</p>
+      </div>
+      <div class="bring-card">
+        <span>04</span>
+        <h4>Collaborative Spirit</h4>
+        <p>I listen deeply, communicate clearly, and adapt to the vision of the project while contributing my own perspective where it adds value.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <h2>Ready to bring your vision<br><em>to life?</em></h2>
+    <a href="contact.html" class="btn-primary">Hire Me</a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-logo"><img src="ABHAY MISHRA WORK IN ANIMATION/new_03.png" alt=""/></div>
+    <p>© 2026 Abhay Mishra · AAFT School of Animation</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
